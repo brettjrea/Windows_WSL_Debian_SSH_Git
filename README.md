@@ -45,3 +45,11 @@ Check config with:
 
 *Upload public key to remote server*
 
+## Initiate Git Repo.
+
+Create Readme.md
+
+```echo "# readme" >> README.md```
+
+
+
