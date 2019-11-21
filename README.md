@@ -1,5 +1,17 @@
-# Windows-WSL-Ubuntu-SSH-Keys
-Generate SSH keys in Ubuntu on WSL and share with Windows 10
+# Windows-WSL-Ubuntu-Git-SSH
+Configure Git and generate SSH keys in Ubuntu on WSL.
+
+## Configure Git.
+
+```git config --global user.name "Yourusername"```
+
+```git config --global user.email "YourEmail@provider.com"```
+
+```git config --global core.autocrlf false```
+
+Check config with:
+
+```git config --list --show-origin```
 
 
 ## Make SSH key in Ubuntu on WSL.
@@ -30,4 +42,6 @@ Generate SSH keys in Ubuntu on WSL and share with Windows 10
 ## Your public key
 
 ```cat ~/.ssh/id_rsa.pub```
+
+*Upload public key to remote server*
 
