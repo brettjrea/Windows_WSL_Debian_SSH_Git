@@ -63,18 +63,23 @@ Check config with:
 ```git commit -m "first commit"```
 
 *Assign first remote repo*
+
 ```git remote add origin git@github.com:yourusername/projectname.git```
 
 *Verify remote repo*
+
 ```git remote -v```
 
 *push to remote*
+
 ```git push -u origin master```
 
 *change remote repo*
+
 ```git remote set-url origin```
 
 *Verify changevto remote repo*
+
 ```git remote -v```
 
 
