@@ -2,10 +2,10 @@
 Generate SSH keys in Ubuntu on WSL and share with Windows 10
 
 
-## Make ssh key in wsl
+## Make SSH key in Ubuntu on WSL.
 
 
-```cd /home/user/```
+```cd /home/WSLusername/```
 
 ```mkdir .ssh```
 
@@ -14,16 +14,18 @@ Generate SSH keys in Ubuntu on WSL and share with Windows 10
 ```ssh-keygen -t rsa -b 4096 -C "youremail@provider.com"```
 
 
-## Copy to win10
+## Copy to WIN10
 
 
-```cd /mnt/c/Users/brett/```
+```cd /mnt/c/Users/WindowsUserName/```
 
 ```mkdir .ssh```
 
 ```cd .ssh```
 
 ```cp ~/.ssh/id_rsa* .```
+
+Set id_rsa* to read only with right click in Windows File Explorer.
 
 ## Your public key
 
