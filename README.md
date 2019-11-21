@@ -25,7 +25,7 @@ Generate SSH keys in Ubuntu on WSL and share with Windows 10
 
 ```cp ~/.ssh/id_rsa* .```
 
-Set id_rsa* to read only with right click in Windows File Explorer.
+*Set id_rsa to read only with right click in Windows File Explorer.*
 
 ## Your public key
 
