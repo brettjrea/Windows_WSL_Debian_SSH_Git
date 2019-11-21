@@ -1,17 +1,5 @@
-# Windows-WSL-Ubuntu-Git-SSH
-Configure Git and generate SSH keys in Ubuntu on WSL.
-
-## Configure Git.
-
-```git config --global user.name "Yourusername"```
-
-```git config --global user.email "YourEmail@provider.com"```
-
-```git config --global core.autocrlf false```
-
-Check config with:
-
-```git config --list --show-origin```
+# Windows-WSL-Ubuntu-SSH-Git
+Generate SSH keys in Ubuntu on WSL.
 
 
 ## Make SSH key in Ubuntu on WSL.
@@ -45,11 +33,51 @@ Check config with:
 
 *Upload public key to remote server*
 
+## Configure Git.
+
+```git config --global user.name "Yourusername"```
+
+```git config --global user.email "YourEmail@provider.com"```
+
+```git config --global core.autocrlf false```
+
+Check config with:
+
+```git config --list --show-origin```
+
+
 ## Initiate Git Repo.
 
-Create Readme.md
+```cd /home/WSLusername/```
+
+```mkdir repo```
+
+```cd repo```
 
 ```echo "# readme" >> README.md```
+
+```git init```
+
+```git add README.md```
+
+```git commit -m "first commit"```
+
+*Assign first remote repo*
+```git remote add origin git@github.com:yourusername/projectname.git```
+
+*Verify remote repo*
+```git remote -v```
+
+*push to remote*
+```git push -u origin master```
+
+*change remote repo*
+```git remote set-url origin```
+
+*Verify changevto remote repo*
+```git remote -v```
+
+
 
 
 
