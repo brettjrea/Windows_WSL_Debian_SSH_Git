@@ -78,7 +78,7 @@ Check config with:
 
 ```git remote set-url origin```
 
-*Verify changevto remote repo*
+*Verify change to remote repo*
 
 ```git remote -v```
 
