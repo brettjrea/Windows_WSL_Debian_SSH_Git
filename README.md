@@ -1,4 +1,4 @@
-# Windows-WSL-Ubuntu-SSH-Git
+# Windows-WSL-Debian-SSH-Git
 Generate SSH keys in Ubuntu on WSL.
 
 
