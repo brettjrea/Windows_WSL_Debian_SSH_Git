@@ -1,88 +1,135 @@
-# Windows-WSL-Debian-SSH-Git
+### Windows-WSL-Debian-SSH-Git
 Generate SSH keys in Ubuntu on WSL.
 
 
-## Make SSH key in Ubuntu on WSL.
+#### Make SSH key in Debian on WSL.
 
 
-```cd /home/WSLusername/```
+```
+cd /home/WSLusername/
+```
 
-```mkdir .ssh```
+```
+mkdir .ssh
+```
 
-```cd .ssh```
+```
+cd .ssh
+```
 
-```ssh-keygen -t rsa -b 4096 -C "youremail@provider.com"```
+```
+ssh-keygen -t rsa -b 4096 -C "youremail@provider.com"
+```
 
 
-## Copy to WIN10
+#### Copy to WIN10
 
 
-```cd /mnt/c/Users/WindowsUserName/```
+```
+cd /mnt/c/Users/WindowsUserName/
+```
 
-```mkdir .ssh```
+```
+mkdir .ssh
+```
 
-```cd .ssh```
+```
+cd .ssh
+```
 
-```cp ~/.ssh/id_rsa* .```
+```
+cp ~/.ssh/id_rsa* .
+```
 
-*Set id_rsa to read only with right click in Windows File Explorer.*
+#### *Set id_rsa to read only with right click in Windows File Explorer.*
 
-## Your public key
 
-```cat ~/.ssh/id_rsa.pub```
+### Show public key to copy onto server..
 
-*Upload public key to remote server*
 
-## Configure Git.
+```
+cat ~/.ssh/id_rsa.pub
+```
 
-```git config --global user.name "Yourusername"```
+#### *Upload public key to remote server*
 
-```git config --global user.email "YourEmail@provider.com"```
 
-```git config --global core.autocrlf false```
+### Configure Git.
+
+```
+git config --global user.name "Yourusername"
+```
+
+```
+git config --global user.email "YourEmail@provider.com"
+```
+
+```
+git config --global core.autocrlf false
+```
 
 Check config with:
 
-```git config --list --show-origin```
+```
+git config --list --show-origin
+```
 
+### Initiate Git Repo.
 
-## Initiate Git Repo.
+```
+cd /home/WSLusername/
+```
 
-```cd /home/WSLusername/```
+```
+mkdir repo
+```
 
-```mkdir repo```
+```
+cd repo
+```
 
-```cd repo```
+```
+echo "# readme" >> README.md
+```
 
-```echo "# readme" >> README.md```
+```
+git init
+```
 
-```git init```
+```
+git add README.md
+```
 
-```git add README.md```
+```
+git commit -m "first commit"
+```
 
-```git commit -m "first commit"```
+#### *Assign first remote repo*
 
-*Assign first remote repo*
+```
+git remote add origin git@github.com:yourusername/projectname.git
+```
 
-```git remote add origin git@github.com:yourusername/projectname.git```
+#### *Verify remote repo*
 
-*Verify remote repo*
+```
+git remote -v
+```
 
-```git remote -v```
+#### *push to remote*
 
-*push to remote*
+```
+git push -u origin master
+```
 
-```git push -u origin master```
+#### *change remote repo*
 
-*change remote repo*
+```
+git remote set-url origin
+```
 
-```git remote set-url origin```
+#### *Verify change to remote repo*
 
-*Verify change to remote repo*
-
-```git remote -v```
-
-
-
-
-
+```
+git remote -v
+```
