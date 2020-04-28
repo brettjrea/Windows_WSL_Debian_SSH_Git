@@ -44,14 +44,12 @@ cp ~/.ssh/id_rsa* .
 #### *Set id_rsa to read only with right click in Windows File Explorer.*
 
 
-### Show public key to copy onto server..
+### Show public key to copy onto remote server.
 
 
 ```
 cat ~/.ssh/id_rsa.pub
 ```
-
-#### *Upload public key to remote server*
 
 
 ### Configure Git.
