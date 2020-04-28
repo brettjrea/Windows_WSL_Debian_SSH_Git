@@ -1,4 +1,4 @@
-### Windows-WSL-Debian-SSH-Git
+### Windows_WSL_Debian_SSH_Git
 Generate SSH keys in Debian on WSL.
 
 
