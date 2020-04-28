@@ -1,5 +1,5 @@
 ### Windows-WSL-Debian-SSH-Git
-Generate SSH keys in Ubuntu on WSL.
+Generate SSH keys in Debian on WSL.
 
 
 #### Make SSH key in Debian on WSL.
